@@ -5,14 +5,14 @@ public class UseCase2PalindromeCheckerApp {
         String word = "madam";
         String reversed = "";
 
-        for(int i = word.length() - 1; i >= 0; i--) {
-            reversed = reversed + word.charAt(i);
+        for(int i = word.length() - 1; i >= 0; i--){
+            reversed += word.charAt(i);
         }
 
-        if(word.equals(reversed)) {
-            System.out.println("The word " + word + " is a palindrome");
+        if(word.equals(reversed)){
+            System.out.println("Palindrome");
         } else {
-            System.out.println("The word " + word + " is not a palindrome");
+            System.out.println("Not Palindrome");
         }
     }
 }
